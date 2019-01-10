@@ -1,0 +1,63 @@
+var x ={
+	status: 1,
+	message:"Success!",
+	data:
+	[
+	{
+	img:"Images/Untitled-2.png",
+	name: "Reebok Track Jacket",
+	price:"100$",
+	},
+
+	{
+	img:"Images/Untitled-2.png",
+	name: "Reebok Track Jacket",
+	price:"100$",
+	},
+
+	{
+	img:"Images/Untitled-1.png",
+	name: "Reebok Track Jacket",
+	price:"100$",
+	},
+
+	{
+	img:"Images/Untitled-2.png",
+	name: "Reebok Track Jacket",
+	price:"100$",
+	},
+
+
+	{
+	img:"Images/Untitled-3.png",
+	name: "Reebok Track Jacket",
+	price:"100$",
+	},
+
+	
+	{
+	img:"Images/Untitled-1.png",
+	name: "Reebok Track Jacket",
+	price:"100$",
+	},
+
+	{
+	img:"Images/Untitled-2.png",
+	name: "Reebok Track Jacket",
+	price:"100$",
+	},
+
+	{
+	img:"Images/Untitled-3.png",
+	name: "Reebok Track Jacket",
+	price:"100$",
+	},
+
+	{
+	img:"Images/Untitled-1.png",
+	name: "Reebok Track Jacket",
+	price:"100$",
+	},
+	
+],
+};

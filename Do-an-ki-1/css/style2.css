@@ -1,0 +1,9 @@
+.section_2_2 a:link{
+	color: black;
+}
+.section2_2 a:visited{
+	color: black;
+}
+.section2_2 a:hover{
+	color: #ff5912;
+}
