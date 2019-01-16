@@ -12,29 +12,29 @@
 <body>
 	<section class="header">
 		<div class="container">
-			<div class="logo col-md-6 col-sm-12 col-6" style="height: 80px; background-color: white;">
-					<a href="#" style="float: left;"><img src="images/logo.jpg" style="height: 80px; margin-left: 30px;"></a>
-					<p style="float: left; font-size: 20px; margin-top: 22px; margin-left: 50px;">"Your event is our inspiration"</p>
+			<div class="header-logo col-md-6 col-sm-12 col-lg-6" style="height: 80px; background-color: white;">
+				<a href="#" style="float: left;"><img src="images/logo.jpg" style="height: 80px; margin-left: 30px;"></a>
+				<p style="float: left; font-size: 20px; margin-top: 22px; margin-left: 50px;">"Your event is our inspiration"</p>
+			</div>
+		
+			<div class="header-menu col-md-6 col-sm-12 col-lg-6" style="height: 80px; background-color: white;">
+				<div style="float: left; margin-left: 305px;">
+					<ul class="header-menu">
+						<li class="li-menu"><a class="a-menu" href="#">Giới Thiệu</a></li>
+						<li class="li-menu"><a class="a-menu" href="#">Liên Hệ</a></li>
+						<li class="li-menu"><a class="a-menu" href="#">Chăm Sóc</a></li>
+					</ul>
 				</div>
 		
-				<div class="menu-bar col-md-6 col-sm-12 col-6" style="height: 80px; background-color: white;">
-					<div style="float: left; margin-left: 305px;">
-						<ul class="ul-menu">
-							<li class="li-menu"><a class="a-menu" href="#">Giới Thiệu</a></li>
-							<li class="li-menu"><a class="a-menu" href="#">Liên Hệ</a></li>
-							<li class="li-menu"><a class="a-menu" href="#">Chăm Sóc</a></li>
-						</ul>
-					</div>
-		
-					<div style="float: left; margin-top: 5px; margin-left: 100px;">
-						<ul class="ul-menu-2">
-							<li class="li-menu-2"><a class="a-menu-2" href="#">Trang Chủ</a></li>
-							<li class="li-menu-2"><a class="a-menu-2" href="#">Sự Kiện</a></li>
-							<li class="li-menu-2"><a class="a-menu-2" href="#">Tuyển Dụng</a></li>
-							<li class="li-menu-2"><a class="a-menu-2" href="#">Phản Hồi</a></li>
-						</ul>
-					</div>		
-				</div>
+				<div style="float: left; margin-top: 5px; margin-left: 100px;">
+					<ul class="header-menu-2">
+						<li class="li-menu-2"><a class="a-menu-2" href="#">Trang Chủ</a></li>
+						<li class="li-menu-2"><a class="a-menu-2" href="#">Sự Kiện</a></li>
+						<li class="li-menu-2"><a class="a-menu-2" href="#">Tuyển Dụng</a></li>
+						<li class="li-menu-2"><a class="a-menu-2" href="#">Phản Hồi</a></li>
+					</ul>
+				</div>		
+			</div>
 		</div>
 	</section>
 
@@ -92,7 +92,38 @@
 	
 	<section class="footer">
 		<div class="container">
+			<div class="footer-top">
+				<div class="footer-logo" style="float: left;">
+					<img src="images/logo-2.jpg">
+				</div>
 
+				<div class="footer-menu" style="float: left;">
+					<ul class="footer-menu-1" style="float: left;">
+                    	<li class=""><a class="" href="#">Giới Thiệu</a></li>
+						<li class=""><a class="" href="#">Liên Hệ</a></li>
+						<li class=""><a class="" href="#">Chăm Sóc</a></li>
+                	</ul>
+	                <ul class="footer-menu-2" style="float: left;">
+	                    <li class=""><a class="" href="#">Trang Chủ</a></li>
+						<li class=""><a class="" href="#">Sự Kiện</a></li>
+						<li class=""><a class="" href="#">Tuyển Dụng</a></li>
+						<li class=""><a class="" href="#">Phản Hồi</a></li>
+	                </ul>
+				</div>
+
+				<div class="footer-subscribe" style="float: left;">
+					<input type="text" name="name" placeholder="Họ và tên"/><br>
+					<input type="text" name="email" placeholder="Nhập Email"/><br>
+					<input type="text" name="phone" placeholder="Nhập Số điện thoại"/><br>
+					<button type="button" id="button" onclick="return checkForm();">ĐĂNG KÝ ĐỂ NHẬN TƯ VẤN !</button>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="footer-copyright">
+                	COPYRIGHT 2017 Management Events
+            	</div>
+			</div>
 		</div>
 	</section>
 </body>

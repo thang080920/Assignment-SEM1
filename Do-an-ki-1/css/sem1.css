@@ -4,39 +4,43 @@ body{
 		margin: 0;
 		padding: 0;
 		}
-		.ul-menu{
-			list-style-type: none;
-		}
-		.ul-menu a:hover {
-      		border-top: 3px solid #be9870;
-      	}
-		.li-menu{
-			float: left;
-		}
-		.a-menu{
-			display: inline-block;
-		    color: #999999;
-		    font-weight: bold;
-		    font-size: 13px;
-		    padding: 10px;
-		}
+.container{
+	float: left;
+	width: 100%;
+}		
+.header-menu{
+	list-style-type: none;
+}
+.header-menu a:hover {
+		border-top: 3px solid #be9870;
+	}
+.li-menu{
+	float: left;
+}
+.a-menu{
+	display: inline-block;
+    color: #999999;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px;
+}
 
-		.ul-menu-2{
-			list-style-type: none;
-		}
-		.ul-menu-2 a:hover {
-      		border-bottom: 3px solid #be9870;
-      	}
-		.li-menu-2{
-			float: left;
-		}
-		.a-menu-2{
-		    color: black;
-		    font-weight: bold;
-		    font-size: 16px;	
-		    padding: 20px;
-		}
+.header-menu-2{
+	list-style-type: none;
+}
+.header-menu-2 a:hover {
+		border-bottom: 3px solid #be9870;
+	}
+.li-menu-2{
+	float: left;
+}
+.a-menu-2{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;	
+    padding: 20px;
+}
 
-		li a:hover {
-			text-decoration: none;
-		}
+li a:hover {
+	text-decoration: none;
+}
