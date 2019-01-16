@@ -11,11 +11,12 @@ body{
 .header-menu{
 	list-style-type: none;
 }
-.header-menu a:hover {
+.header-menu1 a:hover {
 		border-top: 3px solid #be9870;
 	}
 .li-menu{
 	float: left;
+	list-style: none;
 }
 .a-menu{
 	display: inline-block;
