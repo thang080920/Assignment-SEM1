@@ -11,10 +11,7 @@ body{
 
 /* header */
 
-.header-menu{
-	list-style-type: none;
-}
-.header-menu1 a:hover {
+.header-menu-1 a:hover {
 		border-top: 3px solid #be9870;
 	}
 .li-menu{
@@ -29,14 +26,12 @@ body{
     padding: 10px;
 }
 
-.header-menu-2{
-	list-style-type: none;
-}
 .header-menu-2 a:hover {
 		border-bottom: 3px solid #be9870;
 	}
 .li-menu-2{
 	float: left;
+	list-style-type: none
 }
 .a-menu-2{
     color: black;
@@ -60,11 +55,35 @@ li a:hover {
 	float: left;
 }
 
-.footer-menu li{
+.li-menu-3{
 	list-style: none;
 }
+.a-menu-3{
+	display: inline-block;
+    color: #999999;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+}
+.li-menu-4{
+	list-style: none;
+}
+.a-menu-4{
+	display: inline-block;
+    color: #999999;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px;
+}
+
 
 input {
+	border-radius: 3px;
+	height: 35px; width: 205px;
 	border: none;
+	margin-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 13px;
 	margin-bottom: 10px;
 }
