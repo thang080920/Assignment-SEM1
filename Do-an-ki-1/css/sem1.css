@@ -75,9 +75,7 @@ li a:hover {
     font-size: 13px;
     padding: 10px;
 }
-
-
-input {
+input{
 	border-radius: 3px;
 	height: 35px; width: 205px;
 	border: none;
@@ -86,4 +84,9 @@ input {
 	padding-left: 10px;
 	font-size: 13px;
 	margin-bottom: 10px;
+}
+i{
+	float: left;
+	font-size: 25px;
+	padding: 10px;
 }
