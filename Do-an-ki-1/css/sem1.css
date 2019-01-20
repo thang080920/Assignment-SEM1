@@ -25,7 +25,7 @@ body{
 .menu{
     width:100%;
     height:100vh;
-    background: url(bghd.png);
+    background:url(bghd2.png);
     background-size:cover;
 }
 nav .logo{
@@ -49,10 +49,18 @@ nav{
     box-sizing:border-box;
     transition: .5s;
     background:rgba(255,255,255,.5);
+    z-index:1;
 }
 nav.black{
     height:84px;
     background:rgba(0,0,0,.5);
+}
+nav.black ul li a{
+    display:block;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-decoration: none;
+    color:white;
 }
 nav ul{
     margin:0;
@@ -69,10 +77,11 @@ nav ul li a{
     font-weight:bold;
     padding:33px 20px;
     text-decoration: none;
+    color:black;
 }
 nav ul li a:hover{
     background:rgba(0,0,0,.5);
-    color:black;
+    color:#e1474d;
     text-decoration: none;
 }
 nav ul li ul{
@@ -81,7 +90,7 @@ nav ul li ul{
     min-width:250px;
     position: absolute;
     margin-top:1px;
-    box-shadow 0 2px 5px rgba(0,0,0,.5);
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
     transition: .5s;
     opacity:0;
     visibility:hidden;
@@ -94,6 +103,25 @@ nav ul li:hover ul{
 }
 nav ul li ul li a{
     padding:10px;
+}
+.welcome1{
+    text-align:center;
+    padding-top:50px;
+    color:black;
+    font-size:40px;
+}
+.welcome2{
+    text-align:center;
+    color:#e1474d;
+    font-size:60px;
+    font-weight:bold;
+    padding-bottom:50px;
+}
+.bod{
+    background-color:pink;
+}
+.bod1{
+    margin:50px 0;
 }
 section.foot{
     float:left;
@@ -120,9 +148,6 @@ section.foot{
 .contactfooter .contactbutton a{
     padding:20px 40px;
 }
-.loadsub{
-    
-}
 .loadsub .logof{
     padding-top:130px;
 }
@@ -140,9 +165,6 @@ section.foot{
 }
 .subscribe{
     text-align:left;
-}
-.subscribe h4{
-
 }
 .loadsub .email{
     margin-top:20px;
