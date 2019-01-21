@@ -288,6 +288,11 @@ input{
 i{
 	font-size: 25px;
 }
+.copyright{
+	color: yellow;
+	text-align: center;
+	background-color: black;
+}
 .c{
 	background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
 	-webkit-background-clip: text;
