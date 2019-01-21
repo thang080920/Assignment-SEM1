@@ -264,6 +264,9 @@ nav ul li ul li a{
 .loadsub .connect a{
     padding-right:30px;
 }
+.loadsub .connect i{
+	font-size: 25px;
+}
 .email .s{
     margin-left:170px;
 }
@@ -285,9 +288,7 @@ input{
 	padding-right: 10px;
 	padding-left: 10px;
 }
-i{
-	font-size: 25px;
-}
+
 .copyright{
 	color: yellow;
 	text-align: center;
