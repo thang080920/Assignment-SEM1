@@ -1,0 +1,34 @@
+body{
+	background-color:#f4f6f8;
+}
+.sec1{
+	margin-top:1px;
+	margin-bottom:1px;
+	background-color:#ffffff;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.sec1_1{
+	padding-right:20px;
+}
+.sec1_2{
+	letter-spacing: 15px;
+	text-align:right;
+}
+.sec2{
+	background-color:#ffffff;
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.sec2_2{
+	text-decoration:none;
+	padding-top:10px;
+}
+.sec2_2 a{
+	color:#34404b;
+	margin-right:30px;
+}
+.sec2_3{
+	text-align:right;
+	letter-spacing: 25px;
+}
