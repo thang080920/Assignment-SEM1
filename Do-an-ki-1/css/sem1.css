@@ -142,6 +142,79 @@ nav ul li ul li a{
 .bod1{
     background-color:#ffffff;
 }
+.aboutusbg{
+    background:url(mainaboutusbg.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    width:100%;
+}
+.aboutusinfo{
+    background-color:#ffffff;
+}
+.boutusp1{
+    padding-top:50px;
+    font-size:60px;
+    font-weight:bold;
+    text-align:center;
+    background: linear-gradient(to right, violet,purple,pink);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.boutusp2{
+    margin-top:60px;
+    font-size:20px;
+    text-align:justify;
+    padding-bottom:50px;
+}
+.boutusp2 span{
+    font-weight:bold;
+}
+#buc{
+    font-weight:bold;
+    color:blue;
+}
+#buc1{
+    font-weight:bold;
+    color:orange;
+}
+#buc2{
+    font-weight:bold;
+    color:red;
+}
+.slogan{
+    font-size:25px;
+    font-weight:bold;
+    color:pink;
+}
+.aboutusbod img{
+    padding:30px 0 50px 0;
+    width:650px;
+    height:650px;
+}
+.member{
+    padding-top:50px;
+}
+.member p{
+    font-size:60px;
+    font-weight:bold;
+    text-align:center;
+    background: linear-gradient(to right, violet,purple,pink);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom:5px double black;
+}
+.pict{
+    padding-top:30px;
+    margin-left:90px;
+    text-align:center;
+    padding-bottom:50px;
+}
+.pict img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
 .aboutus-1{
     font-weight:bold;
     font-size:40px;
@@ -280,9 +353,6 @@ nav ul li ul li a{
 .loadsub .connect a{
     padding-right:30px;
 }
-.loadsub .connect i{
-	font-size: 25px;
-}
 .email .s{
     margin-left:170px;
 }
@@ -299,16 +369,6 @@ nav ul li ul li a{
 }
 h1{
     font-size:15px;
-}
-input{
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-.copyright{
-	color: white;
-	text-align: center;
-	background-color: black;
 }
 .c{
 	background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
