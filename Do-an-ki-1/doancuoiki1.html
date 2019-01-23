@@ -35,8 +35,10 @@
                     <div>
                         <ul>
                             <li><a href="#">Trang Chủ</a></li>
-                            <li><a href="#" class="services">Dịch Vụ</a>
+                            <li><a href="#">Dịch Vụ</a>
+                                <ul class="services">
 
+                                </ul>
                             </li>
                             <li><a href="#">Thư Viện</a></li>
                             <li><a href="#">Giới Thiệu</a></li>
@@ -277,23 +279,21 @@
     });
     });
 
+
     function ListService() {
         jQuery.ajax ({
             url: '/list_service',
             method: "GET",
             success: function (result) {
-                var html = '',
+                var html = '';
                 for (var i=0; i < result.data.length; i++){
-                    html += '<ul>';
                     html += '<li ><a href="#">'+result.data[i].ten_service+'</a></li>';
-                    html += '</ul>';
                 }
-                jQuery("ul li .services").append(html);
+                jQuery(".services").append(html);
             }
         });
     }
 
     ListService();
-
 </script>
 </html>
