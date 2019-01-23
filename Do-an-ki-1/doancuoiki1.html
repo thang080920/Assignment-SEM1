@@ -35,14 +35,8 @@
                     <div>
                         <ul>
                             <li><a href="#">Trang Chủ</a></li>
-                            <li><a href="#">Dịch Vụ</a>
-                                <ul>
-                                    <li ><a href="#">Lễ Cưới</a></li>
-                                    <li ><a href="#">Tiệc Sinh Nhật</a></li>
-                                    <li ><a href="#">Lễ Hội Âm Nhạc</a></li>
-                                    <li ><a href="#">Sự Kiện Trường Học</a></li>
-                                    <li ><a href="#">Sự Kiện Khác</a></li>
-                                </ul>
+                            <li><a href="#" class="services">Dịch Vụ</a>
+
                             </li>
                             <li><a href="#">Thư Viện</a></li>
                             <li><a href="#">Giới Thiệu</a></li>
@@ -271,16 +265,35 @@
 </body>
 
 <script type="text/javascript">
-$(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-    nav:false,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout: 8000,
-    items:1
-});
-});
+    $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        dots:false,
+        autoplay:true,
+        autoplayTimeout: 8000,
+        items:1
+    });
+    });
+
+    function ListService() {
+        jQuery.ajax ({
+            url: '/list_service',
+            method: "GET",
+            success: function (result) {
+                var html = '',
+                for (var i=0; i < result.data.length; i++){
+                    html += '<ul>';
+                    html += '<li ><a href="#">'+result.data[i].ten_service+'</a></li>';
+                    html += '</ul>';
+                }
+                jQuery("ul li .services").append(html);
+            }
+        });
+    }
+
+    ListService();
+
 </script>
 </html>
