@@ -40,7 +40,7 @@ MongoClient.connect(url, function (err, db) {
     var services = collection.collection("services");
 
 
-    app.get("/list_service", function (req, res) {
+    app.get("/list_menu_service", function (req, res) {
         menu_services.find({}).toArray(function (err, result) {
             var json = {
                 status: 0,
