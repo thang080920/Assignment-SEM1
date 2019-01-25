@@ -28,17 +28,13 @@
                                 <ul>
                                     <li><a href="doancuoiki1.html">Trang Chủ</a></li>
                                     <li><a href="#">Dịch Vụ</a>
-                                        <ul>
-                                            <li ><a href="#">Lễ Cưới</a></li>
-                                            <li ><a href="#">Tiệc Sinh Nhật</a></li>
-                                            <li ><a href="#">Lễ Hội Âm Nhạc</a></li>
-                                            <li ><a href="#">Sự Kiện Trường Học</a></li>
-                                            <li ><a href="#">Sự Kiện Khác</a></li>
+                                        <ul class="services">
+
                                         </ul>
                                     </li>
-                                    <li><a href="#">Thư Viện</a></li>
+                                    <li><a href="gallery.html">Thư Viện</a></li>
                                     <li><a href="#">Giới Thiệu</a></li>
-                                    <li><a href="#">Liên Hệ</a></li>
+                                    <li><a href="contactus.html">Liên Hệ</a></li>
                                 </ul>
                             </nav>
                             <div>
@@ -166,4 +162,24 @@
                     </div>
                 </footer>
 </body>
+
+<script type="text/javascript">
+    function ListService() {
+        jQuery.ajax ({
+            url: '/list_menu_service',
+            method: "GET",
+            success: function (result) {
+                var html = '';
+                for (var i=0; i < result.data.length; i++){
+                    html += '<li ><a href="#">'+result.data[i].ten_service+'</a></li>';
+                }
+                jQuery(".services").append(html);
+            }
+        });
+    }
+
+    ListService();
+
+
+</script>
 </html>

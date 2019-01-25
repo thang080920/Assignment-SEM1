@@ -38,6 +38,7 @@ MongoClient.connect(url, function (err, db) {
     var collection = db.db();
     var menu_services = collection.collection("Menu_services");
     var services = collection.collection("services");
+    var khach_hang = collection.collection("khach_hang");
 
 
     app.get("/list_menu_service", function (req, res) {
@@ -58,6 +59,23 @@ MongoClient.connect(url, function (err, db) {
 
          res.send(json);
         });
+    });
+
+    app.post("/luu-thong-tin", function (req,res) {
+       var kh = {
+            hovaten: req.body.hovaten,
+            sdt: req.body.sdt,
+            email: req.body.email,
+            note: req.body.note
+       };
+
+       khach_hang.insert([kh],function (err,result) {
+           if (err) {
+               res.send("Failed");
+           } else {
+               res.redirect('/contactus.html');
+           }
+       });
     });
     //Close connection
     //db.close();
