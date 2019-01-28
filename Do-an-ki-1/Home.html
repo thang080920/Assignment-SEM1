@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 	<link rel="stylesheet" href="Vendor/Bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="css/sem1.css"/>
-    <script src="jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="Vendor\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css">
     <link rel="stylesheet" href="Vendor\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.min.css">
@@ -30,7 +29,7 @@
             <div class="row">
                     <nav>
                         <div class="logo">
-                                <img src="image/jadon2.png" alt="logo">
+                                <img src="images/jadon2.png" alt="logo">
                         </div>
                     <div>
                         <ul>
@@ -40,9 +39,9 @@
 
                                 </ul>
                             </li>
-                            <li><a href="#">Thư Viện</a></li>
-                            <li><a href="#">Giới Thiệu</a></li>
-                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="gallery.html">Thư Viện</a></li>
+                            <li><a href="AboutUs.html">Giới Thiệu</a></li>
+                            <li><a href="contactus.html">Liên Hệ</a></li>
                         </ul>
                     </nav>
                     <div>
@@ -80,7 +79,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="aboutus2">
-                        <img src="image/aboutusbg.png" alt="">
+                        <img src="images/aboutusbg.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -219,7 +218,7 @@
             <div class="row">
                 <div class="loadsub col-lg-12">
                         <div class="logof col-lg-3">
-                            <img src="image/jadon2-1.png" alt="logo">
+                            <img src="images/jadon2-1.png" alt="logo">
                         </div>
                         <div class="address col-lg-3">
                             <p>Địa chỉ:<br/>
@@ -282,7 +281,7 @@
 
     function ListService() {
         jQuery.ajax ({
-            url: '/list_service',
+            url: '/list_menu_service',
             method: "GET",
             success: function (result) {
                 var html = '';
