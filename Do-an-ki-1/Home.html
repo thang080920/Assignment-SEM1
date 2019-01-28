@@ -280,17 +280,17 @@
 
 
     function ListService() {
-    jQuery.ajax ({
-        url: '/list_menu_service',
-        method: "GET",
-        success: function (result) {
-            var html = '';
-            for (var i=0; i < result.data.length; i++){
-                html += '<li ><a href="Services.html">'+result.data[i].ten_service+'</a></li>';
+        jQuery.ajax ({
+            url: '/list_menu_service',
+            method: "GET",
+            success: function (result) {
+                var html = '';
+                for (var i=0; i < result.data.length; i++){
+                    html += '<li ><a href="Services.html?ma_service='+result.data[i].ma_service+'">'+result.data[i].ten_service+'</a></li>';
+                }
+                jQuery(".services").append(html);
             }
-            jQuery(".services").append(html);
-        }
-    });
+        });
     }
 
 ListService();
