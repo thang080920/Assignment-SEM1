@@ -77,6 +77,26 @@ MongoClient.connect(url, function (err, db) {
            }
        });
     });
+
+    app.get("/list-service", function (req,res) {
+        services.find({ma_service: req.query.ma_service}).toArray(function (err,result) {
+            var service = {
+                status: 0,
+                message: "Fail",
+                data: []
+            };
+
+            if (err) {
+                console.log(err);
+            } else {
+                service.status = 1;
+                service.message = "Success";
+                service.data = result;
+            }
+        
+        res.send(service);
+        });
+    });
     //Close connection
     //db.close();
     }

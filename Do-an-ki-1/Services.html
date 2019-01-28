@@ -2,51 +2,71 @@
 <html>
 <head>
     <title>Dịch Vụ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 	<link rel="stylesheet" href="Vendor/Bootstrap/css/bootstrap.css"/>
-	<link rel="stylesheet" href="css/sem1.css"/>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/sem1.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="Vendor\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css">
+    <link rel="stylesheet" href="Vendor\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.min.css">
+    <script src="Vendor\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js"></script>
+    <script src="Vendor\OwlCarousel2-2.3.4\dist\owl.carousel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
 </head>
 <body>
-    <header class="head menu col-lg-12">
-        <div class="cont">
-            <div class="row">
-                    <nav>
-                        <div class="logo">
-                                <img src="Images/shopy.png" alt="logo">
-                        </div>
-                    <div>
-                        <ul>
-                            <li><a href="#">Trang Chủ</a></li>
-                            <li><a href="#">Dịch Vụ</a>
-                                <ul>
-                                    <li ><a href="#">Lễ Cưới</a></li>
-                                    <li ><a href="#">Tiệc Sinh Nhật</a></li>
-                                    <li ><a href="#">Lễ Hội Âm Nhạc</a></li>
-                                    <li ><a href="#">Sự Kiện Trường Học</a></li>
-                                    <li ><a href="#">Sự Kiện Khác</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Thư Viện</a></li>
-                            <li><a href="#">Về Chúng Tôi</a></li>
-                            <li><a href="#">Liên Hệ</a></li>
-                        </ul>
-                    </nav>
-                    </div>
+    <header class="head col-lg-12">
+        <div class="blank"></div>
+        <div class="row">
+        <div class="owl-carousel owl-theme">
+                <div class="item bg1" ></div>
+                <div class="item bg2" ></div>
+                <div class="item bg3" ></div>
             </div>
         </div>
-    </header>
+    <div class="cont">
+        <div class="row">
+                <nav>
+                    <div class="logo">
+                            <img src="images/jadon2.png" alt="logo">
+                    </div>
+                <div>
+                    <ul>
+                        <li><a href="#">Trang Chủ</a></li>
+                        <li><a href="#">Dịch Vụ</a>
+                            <ul class="services">
 
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">Thư Viện</a></li>
+                        <li><a href="AboutUs.html">Giới Thiệu</a></li>
+                        <li><a href="contactus.html">Liên Hệ</a></li>
+                    </ul>
+                </nav>
+                <div>
+                </div>
+                </div>
+        </div>
+    </div>
+</header>
+    
     <section class="col-lg-12">
+        <div class="cont">
+            <div class="row">
+                <div class="serv">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nearfoot col-lg-12">
+
         <div class="cont">
             <div class="row">
                 <div class="loadsub col-lg-12">
                         <div class="logof col-lg-3">
-                            <img src="Images/shopy.png" alt="logo">
+                            <img src="images/jadon2-1.png" alt="logo">
                         </div>
                         <div class="address col-lg-3">
                             <p>Địa chỉ:<br/>
@@ -71,25 +91,73 @@
                                 <input type="submit" value="Đăng ký" class="btn btn-warning s">
                             </div>
                             <div class="connect">
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-google"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                               <a href="#"><i class="fab fa-facebook"></i></a>
+                               <a href="#"><i class="fab fa-twitter"></i></a>
+                               <a href="#"><i class="fab fa-google"></i></a>
+                               <a href="#"><i class="fab fa-youtube"></i></a>
+                               <a href="#"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div> 
                     </div>
-            </div>
+          <img src="" alt="">
         </div>
+    </div>
     </section>
-    <script type="text/javascript">
-        $(window).on('scroll',function(){
-            if ($(window).scrollTop()){
-                $('nav').addClass('black');
-            }else{
-                $('nav').removeClass('black');
-            }
-        })
-    </script>
+
+    <footer>
+        <div class="ft">
+            <div class="bordf">
+                <p>Designed for Assignment by Team 2</p>
+            </div>  
+        </div>
+    </footer>
 </body>
+<script type="text/javascript">
+    $(window).on('scroll',function(){
+        if ($(window).scrollTop()){
+            $('nav').addClass('black');
+        }else{
+            $('nav').removeClass('black');
+        }
+    });
+
+    function ListService() {
+        jQuery.ajax ({
+            url: '/list_menu_service',
+            method: "GET",
+            success: function (result) {
+                var html = '';
+                for (var i=0; i < result.data.length; i++){
+                    html += '<li ><a href="Services.html?ma_service='+result.data[i].ma_service+'">'+result.data[i].ten_service+'</a></li>';
+                }
+                jQuery(".services").append(html);
+            }
+        });
+    }
+
+ListService();
+
+var urlParams = new URLSearchParams(window.location.search);
+    jQuery.ajax({
+        url: '/list-service',
+        method: "GET",
+        data: {ma_service: urlParams.get("ma_service")},
+        success: function (result) {
+            var html = '';
+            for (var i=0; i < result.data.length; i++) {
+                html += '<h3>'+result.data[i].banner+'</h3>';
+                html += '<h1>'+result.data[i].title+'</h1>';
+                html += '<span>'+result.data[i].reason1+'</span>';
+                html += '<p>'+result.data[i].describe1+'</p>';
+                html += '<img src="'+result.data[i].img+'">';
+                html += '<ul>';
+                for (let j = 0; j < result.data[i].describe2.length;j++){
+                    html += '<li>'+result.data[i].describe2[j]+'<li>';
+                }
+                html += '</ul>';
+            } 
+            jQuery(".serv").append(html);
+        }
+    });
+</script>
 </html>

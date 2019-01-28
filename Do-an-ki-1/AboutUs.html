@@ -165,20 +165,20 @@
 
 <script type="text/javascript">
     function ListService() {
-        jQuery.ajax ({
-            url: '/list_menu_service',
-            method: "GET",
-            success: function (result) {
-                var html = '';
-                for (var i=0; i < result.data.length; i++){
-                    html += '<li ><a href="#">'+result.data[i].ten_service+'</a></li>';
-                }
-                jQuery(".services").append(html);
+    jQuery.ajax ({
+        url: '/list_menu_service',
+        method: "GET",
+        success: function (result) {
+            var html = '';
+            for (var i=0; i < result.data.length; i++){
+                html += '<li ><a href="Services.html">'+result.data[i].ten_service+'</a></li>';
             }
-        });
+            jQuery(".services").append(html);
+        }
+    });
     }
 
-    ListService();
+ListService();
 
 
 </script>
