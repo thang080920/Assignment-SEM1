@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 	<link rel="stylesheet" href="Vendor/Bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="css/sem1.css"/>
+    <link rel="stylesheet" href="css/services.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="Vendor\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min.css">
     <link rel="stylesheet" href="Vendor\OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.theme.default.min.css">
@@ -147,12 +148,12 @@ var urlParams = new URLSearchParams(window.location.search);
             for (var i=0; i < result.data.length; i++) {
                 html += '<h3>'+result.data[i].banner+'</h3>';
                 html += '<h1>'+result.data[i].title+'</h1>';
-                html += '<span>'+result.data[i].reason1+'</span>';
-                html += '<p>'+result.data[i].describe1+'</p>';
+                html += '<p class="serv_reason">'+result.data[i].reason1+'</p>';
+                html += '<p class="serv_des">'+result.data[i].describe1+'</p>';
                 html += '<img src="'+result.data[i].img+'">';
                 html += '<ul>';
                 for (let j = 0; j < result.data[i].describe2.length;j++){
-                    html += '<li>'+result.data[i].describe2[j]+'<li>';
+                    html += '<li class="lis_des">'+result.data[i].describe2[j]+'<li>';
                 }
                 html += '</ul>';
             } 
