@@ -1,5 +1,7 @@
 h3 {
     text-align: center;
+    color:violet;
+    font-size:60px;
 }
 h1 {
     font-size: 50px;
@@ -12,21 +14,34 @@ h1 {
 }
 .serv_des {
     padding: 0 160px;
-    font-size: 18px;
+    font-size: 20px;
+    text-align:justify;
+    padding-bottom:50px;
 }
 .lis_des {
     text-align: center;
     font-size: 22px;
-    padding: 0 200px;
+}
+.serv img{
+    padding-bottom:50px;
 }
 .serv-bg{
-    background:url(home2.png);
+    background:url(services.png);
     background-size:cover;
-    background-repeat:no-repeat;
     height:100vh;
+    background-position: center;
 }
 .serv-layout{
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.7);
     background-size:cover;
     height:100vh;
+}
+.serv-bg-text{
+    text-align:center;
+    padding-top:400px;
+    color:#fff;
+    font-size:70px;
+    font-weight:bold;
+}
+.serv ul{
 }

@@ -52,7 +52,9 @@
 </header>
     <section class="serv-bg col-lg-12">
         <div class="row">
-            <div class="serv-layout"></div>
+            <div class="serv-layout">
+                <p class="serv-bg-text">Services</p>
+            </div>
         </div>
     </section>
     <section class="col-lg-12">
@@ -115,13 +117,6 @@
     </footer>
 </body>
 <script type="text/javascript">
-    $(window).on('scroll',function(){
-        if ($(window).scrollTop()){
-            $('nav').addClass('black');
-        }else{
-            $('nav').removeClass('black');
-        }
-    });
 
     function ListService() {
         jQuery.ajax ({
