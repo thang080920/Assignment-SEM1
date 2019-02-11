@@ -7,7 +7,7 @@ body{
 	font-weight: 400;
 	color: #28313b;
 	line-height: 1.15;
-    font-family: 'Coiny', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .cont{
 	width: 80%;
@@ -44,6 +44,7 @@ body{
 .hb-layout-text .bigtext{
     font-size:36px;
     color:#eeaeca;
+    padding-bottom:30px;
 }
 nav .logo{
     position: absolute;
@@ -115,13 +116,29 @@ nav ul li:hover ul{
 nav ul li ul li a{
     padding:10px;
 }
-.nopadding{
-    padding-right:-15px !important;
-    padding-left:-15px !;
-}
 .body-img1 img{
     width:100%;
     height:100%;
+}
+.nospace{
+    margin-left:-15px;
+    margin-right:-15px;
+}
+.sec1{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.body-text{
+    padding-top:20px;
+    text-align:center;
+    color:#1F2667;
+}
+.body-big-text{
+    padding-top:40px;
+    font-size:36px;
+    font-weight:bold;
+    text-align:center;
+    color:#1F2667;
 }
 #buc{
     font-weight:bold;
@@ -135,16 +152,6 @@ nav ul li ul li a{
     font-weight:bold;
     color:red;
 }
-.slogan{
-    font-size:25px;
-    font-weight:bold;
-    color:pink;
-}
-.aboutusbod img{
-    padding:30px 0 50px 0;
-    width:650px;
-    height:650px;
-}
 .member{
     padding-top:50px;
 }
@@ -152,10 +159,24 @@ nav ul li ul li a{
     font-size:60px;
     font-weight:bold;
     text-align:center;
-    background: linear-gradient(to right, yellow, skyblue,orange,green);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-bottom:5px double black;
+}
+.aboutusbg{
+    background:url(aboutusbg.png);
+    height:40vh;
+    background-size:cover;
+    background-position:0 -100px;
+}
+.head-aboutus{
+    font-size:36px;
+    font-weight:bold;
+    color:#1F2667;
+    text-align:center;
+    padding-top:50px;
+    padding-bottom:30px;
+}
+.pict span{
+    color:#666;
+    font-size:13px;
 }
 .pict{
     padding-top:30px;
@@ -167,6 +188,32 @@ nav ul li ul li a{
     width:100px;
     height:100px;
     border-radius:50%;
+}
+.contactus-bg{
+    background:url(contactusbg1.png);
+    background-size:cover;
+    height:50vh;
+}
+.contact-us-input-container{
+    width:50%;
+    margin:0 auto;
+}
+.contactus-icon{
+    text-align:center;
+    padding-top:50px;
+}
+.contactus-icon-style{
+    padding:40px;
+    font-size:40px;
+    border:1px solid #aaa;
+    border-radius:50%;
+}
+.contact-us-bigtext{
+    font-size:24px;
+}
+.contact-us-smalltext{
+    font-size:14px;
+    color:#666;
 }
 .aboutus-1{
     font-weight:bold;
@@ -196,45 +243,12 @@ nav ul li ul li a{
 .aboutus3 a{
     padding:10px 40px;
 }
-.bod2{
-    background-color:#ffffff;
-}
-.bod2 i{
-    margin-left:170px;
-    width:100px;
-    height:100px;
-    font-size:30px;
-    padding-top:35px;
-    text-align:center;
-    border: 1px solid black;
-    border-radius:50%;
-}
-.exp1{
-    padding-top:30px;
-    font-size:30px;
-    color:black;
-    text-align:center;
-}
-.exp2{
-    font-size:15px;
-    color:black;
-    text-align:justify;
-    padding-bottom:50px;
-}
-.whyus-1 p{
-    padding-top:50px;
-    font-size:40px;
-    font-weight:bold;
-    text-align:center;
-    color:black;
-    padding-bottom:50px;
-}
 .foot{
     float:left;
+    background:url(home-foot.png);
     background-size:cover;
-    background:url(contactbg.png);
-    background-attachment: fixed;
     background-repeat:no-repeat;
+    background-position:0 -200px;
 }
 .abovefooter{
     background-color:#ffffff;
@@ -246,8 +260,10 @@ nav ul li ul li a{
     font-size:40px;
     font-weight:bold;
     padding-bottom:30px;
+    color:#1F2667;
 }
 .review-1{
+    color:#1F2667;
     box-sizing:border-box;
     border: 1px solid black;
     text-align:justify;
@@ -258,15 +274,15 @@ nav ul li ul li a{
     margin-bottom:1px;
 }
 .contactfooter .smallp{
-    font-size:40px;
-    color:#e1474d;
+    font-size:24px;
+    color:#ffffff;
     padding-top:100px;
     padding-bottom:10px;
 }
 .contactfooter .bigp{
-    font-size:60px;
+    font-size:36px;
     font-weight:bold;
-    color:#ffffff;
+    color:#eeaeca;
 }
 .contactfooter .contactbutton{
     padding-top:30px;
@@ -274,6 +290,14 @@ nav ul li ul li a{
 }
 .contactfooter .contactbutton a{
     padding:20px 40px;
+}
+.GGMap{
+    height:500px;
+}
+#map{
+    height:100%;
+    margin-left:-15px;
+    margin-right:-15px;
 }
 .loadsub .logof{
     padding-top:65px;
@@ -294,6 +318,7 @@ nav ul li ul li a{
 }
 .subscribe{
     text-align:left;
+    color:#1F2667;
 }
 .loadsub .email{
     margin-top:20px;
@@ -301,6 +326,7 @@ nav ul li ul li a{
 .loadsub .email .input-text{
     width:270px;
     height:35px;
+    border-radius:5px;
 }
 .loadsub .connect{
     padding-top:15px;
@@ -312,13 +338,19 @@ nav ul li ul li a{
     margin-left:170px;
 }
 .nearfoot{
-    background:url(addressbg.png);
+    background:url(footer.png);
     background-attachment: fixed;
+    background-position:0 -150px;
     background-size:cover;
     background-repeat:no-repeat;
 }
 .layer{
-    background: rgba(184, 195, 214,.5);
+    background: linear-gradient(10deg, rgba(238,174,202,0.6) 0%, rgba(24,24,24,1) 100%);
+    margin-left:-15px;
+	margin-right:-15px;
+}
+.layer-footer{
+    background: linear-gradient(180deg, rgba(238,174,202,0.6) 0%, rgba(24,24,24,0.8) 100%);
     margin-left:-15px;
 	margin-right:-15px;
 }
@@ -329,9 +361,6 @@ h1{
 	background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-}
-footer{
-    text-align:center;
 }
 .contactusbg{
     background:url(contactusbg.png);
@@ -357,6 +386,7 @@ footer{
 }
 .contactusinput{
     padding-bottom:50px;
+    padding-top:50px;
 }
 .galtitle{
     padding-bottom:50px;
