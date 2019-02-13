@@ -142,17 +142,15 @@ var urlParams = new URLSearchParams(window.location.search);
         success: function (result) {
             var html = '';
             for (var i=0; i < result.data.length; i++) {
-                html += '<h3>'+result.data[i].banner+'</h3>';
-                html += '<h1>'+result.data[i].title+'</h1>';
-                html += '<p class="serv_reason">'+result.data[i].reason1+'</p>';
-                html += '<p class="serv_des">'+result.data[i].describe1+'</p>';
-                html += '<img src="'+result.data[i].img+'">';
-                html += '<p class="serv_reason">'+result.data[i].reason2+'</p>';
-                html += '<ul>';
+                html += result.data[i].banner;
+                html += result.data[i].title;
+                html += result.data[i].reason1;
+                html += result.data[i].describe1;
+                html += result.data[i].img;
+                html += result.data[i].reason2;
                 for (let j = 0; j < result.data[i].describe2.length;j++){
-                    html += '<li class="lis_des">'+result.data[i].describe2[j]+'</li>';
+                    html += result.data[i].describe2[j];
                 }
-                html += '</ul>';
             } 
             jQuery(".serv").append(html);
         }
