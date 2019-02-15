@@ -26,15 +26,19 @@
                                 </div>
                             <div>
                                 <ul>
-                                    <li><a href="Home.html">Trang Chủ</a></li>
+                                    <li><a href="#">Trang Chủ</a></li>
                                     <li><a href="#">Dịch Vụ</a>
-                                        <ul class="services">
-
+                                        <ul>
+                                            <li ><a href="#">Lễ Cưới</a></li>
+                                            <li ><a href="#">Tiệc Sinh Nhật</a></li>
+                                            <li ><a href="#">Lễ Hội Âm Nhạc</a></li>
+                                            <li ><a href="#">Sự Kiện Trường Học</a></li>
+                                            <li ><a href="#">Sự Kiện Khác</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="gallery.html">Thư Viện</a></li>
+                                    <li><a href="#">Thư Viện</a></li>
                                     <li><a href="#">Giới Thiệu</a></li>
-                                    <li><a href="contactus.html">Liên Hệ</a></li>
+                                    <li><a href="#">Liên Hệ</a></li>
                                 </ul>
                             </nav>
                             <div>
@@ -93,19 +97,19 @@
                         </div>
                         <div class="col-lg-2 pict">
                             <a href="https://www.facebook.com/IamThng" target="_blank"><img src="images/avathangngoo.png" alt=""></a>
-                            <p style="color:yellow;">Mr. Thắng Ngoo <br/> Tư Lệnh Cách Mạng</p>
+                            <p >Doan Manh Thang <br/> <p class="level-color">CEO</p></p>
                         </div>
                         <div class="col-lg-2 pict">
                             <a href="https://www.facebook.com/coidergrobe"target="_blank" ><img src="images/avatoan.png" alt=""></a>
-                            <p style="color:skyblue;">Mr. Toàn Đẹp Trai <br/> Vua Hải Tặc</p>
+                            <p >Mai Ngoc Toan <br/> <p class="level-color">CSO</p></p>
                         </div>
                         <div class="col-lg-2 pict">
                             <a href="https://www.facebook.com/MrNguyenCaoHuyTruong"target="_blank"><img src="images/avatruongngoo.png" alt=""></a>
-                            <p style="color:orange;">Mr. Trường Ngoo <br/> Tứ Hoàng</p>
+                            <p >Cao Huy Truong <br/> <p class="level-color">CTO</p></p>
                         </div>
                         <div class="col-lg-2 pict">
                             <a href="https://www.facebook.com/profile.php?id=100009363836755"target="_blank"><img src="images/avalongngoo.png" alt=""></a>
-                            <p style="color:green;">Mr. Long Ngoo <br/> Thất Vũ Hải</p>
+                            <p >Vu Duc Long <br/> <p class="level-color">COO</p></p>
                     </div>
                 </div>
             </div>
@@ -153,33 +157,5 @@
                     </div>
                 </div>
                 </section>
-            
-                <footer>
-                    <div class="ft">
-                        <div class="bordf">
-                            <p>Designed for Assignment by Team 2</p>
-                        </div>  
-                    </div>
-                </footer>
 </body>
-
-<script type="text/javascript">
-    function ListService() {
-        jQuery.ajax ({
-            url: '/list_menu_service',
-            method: "GET",
-            success: function (result) {
-                var html = '';
-                for (var i=0; i < result.data.length; i++){
-                    html += '<li ><a href="Services.html?ma_service='+result.data[i].ma_service+'">'+result.data[i].ten_service+'</a></li>';
-                }
-                jQuery(".services").append(html);
-            }
-        });
-    }
-
-ListService();
-
-
-</script>
 </html>

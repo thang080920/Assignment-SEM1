@@ -31,21 +31,36 @@ body{
 .bg1{
     width:100%;
     height:100vh;
-    background:url(slidebg.png);
+    background:url(wedding-bg.png);
     background-size:cover;
     background-repeat:no-repeat;
 }
 .bg2{
     width:100%;
     height:100vh;
-    background:url(bghd2.png);
+    background:url(birthday-bg.png);
     background-size:cover;
     background-repeat:no-repeat;
 }
 .bg3{
     width:100%;
     height:100vh;
-    background:url(slidebg1.png);
+    background:url(music-bg.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:0 -200px;
+}
+.bg4{
+    width:100%;
+    height:100vh;
+    background:url(school-bg.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.bg5{
+    width:100%;
+    height:100vh;
+    background:url(food-bg.png);
     background-size:cover;
     background-repeat:no-repeat;
 }
@@ -87,11 +102,12 @@ nav ul li a{
     font-weight:bold;
     padding:33px 20px;
     text-decoration: none;
-    color:black;
+    color:#666;
     font-family: 'Coiny', cursive;
 }
 nav ul li a:hover{
-    background:rgba(0,0,0,.2);
+    color:black;
+    background:rgba(0,0,0,0.1);
     text-decoration: none;
 }
 nav ul li a:visited{
@@ -146,8 +162,9 @@ nav ul li ul li a{
     background:url(aboutusbg.png);
     background-size:cover;
     background-repeat:no-repeat;
-    height:350px;
+    height:100vh;
     width:100%;
+    background-position:0 -100px;
 }
 .aboutusinfo{
     background-color:#ffffff;
@@ -157,11 +174,10 @@ nav ul li ul li a{
     font-size:60px;
     font-weight:bold;
     text-align:center;
-    background: linear-gradient(to right, violet,purple,pink);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:black;
 }
 .boutusp2{
+    color:#666;
     margin-top:60px;
     font-size:20px;
     text-align:justify;
@@ -185,7 +201,7 @@ nav ul li ul li a{
 .slogan{
     font-size:25px;
     font-weight:bold;
-    color:pink;
+    color:black;
 }
 .aboutusbod img{
     padding:30px 0 50px 0;
@@ -199,10 +215,10 @@ nav ul li ul li a{
     font-size:60px;
     font-weight:bold;
     text-align:center;
-    background: linear-gradient(to right, yellow, skyblue,orange,green);
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-bottom:5px double black;
+}
+.level-color{
+    font-size:12px;
+    color:#666;
 }
 .pict{
     padding-top:30px;
@@ -365,7 +381,7 @@ nav ul li ul li a{
     background-repeat:no-repeat;
 }
 .layer{
-    background: rgba(184, 195, 214,.5);
+    background: rgba(184, 195, 214,.6);
     margin-left:-15px;
 	margin-right:-15px;
 }
@@ -395,6 +411,35 @@ footer{
     background: linear-gradient(to right, pink, hotpink );
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-bottom:50px;
+}
+.contactus-bg{
+    background:url(contactusbg1.png);
+    background-size:cover;
+    height:100vh;
+}
+.contact-us-input-container{
+    width:50%;
+    margin:0 auto;
+}
+.contactus-icon{
+    text-align:center;
+    padding-top:50px;
+}
+.contactus-icon-style{
+    padding:40px;
+    font-size:40px;
+    border:1px solid #aaa;
+    border-radius:50%;
+}
+.contact-us-bigtext{
+    font-size:24px;
+}
+.contact-us-smalltext{
+    font-size:14px;
+    color:#666;
+}
+.contact-icon{
     padding-bottom:50px;
 }
 .contactusinfo p{
@@ -428,3 +473,86 @@ footer{
 .gallery img:hover{
     transform:scale(1.1);
 }
+.wedding-service-bg{
+    background:url(wedding-service-bg.png);
+    background-size:cover;
+    width:100%;
+    height:100vh;
+}
+.service-body{
+    background-color:#ffffff;
+}
+.wedding-body{
+    padding-bottom:50px;
+}
+.service-headtext{
+    padding-top:50px;
+    font-size:60px;
+    font-weight:bold;
+    text-align:center;
+    color:black;
+}
+.service-body1{
+    color:#666;
+    margin-top:60px;
+    font-size:20px;
+    text-align:justify;
+    padding-bottom:50px;
+}
+.service-body2 img{
+    width:650px;
+    height:570px;
+}
+.wedding-body-service{
+    margin-left:-5px;
+    margin-right:-17px;
+}
+.service-gallery img{
+    height:300px;
+    width:300px;
+    transition:0.5s;
+}
+.service-gallery img:hover{
+    transform:scale(1.1);
+}
+.text-service-gallery{
+    text-align:center;
+    font-size:40px;
+    color:black;
+    font-weight:bold;
+    padding-bottom:30px;
+}
+.margin-right{
+    margin-right:15px;
+}
+.margin-left{
+    margin-left:15px;
+}
+.birthday-service-bg{
+    background:url(birthday-service-bg.png);
+    background-size:cover;
+    width:100%;
+    height:100vh;
+}
+.music-service-bg{
+    background:url(music-service-bg.png);
+    background-size:cover;
+    width:100%;
+    height:100vh;
+    background-position:0 -200px;
+}
+.school-service-bg{
+    background:url(school-service-bg.png);
+    background-size:cover;
+    width:100%;
+    height:100vh;
+    background-position:0 -200px;
+}
+.food-service-bg{
+    background:url(food-service-bg.png);
+    background-size:cover;
+    width:100%;
+    height:100vh;
+    background-position:0 -200px;
+}
+
