@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Danh Sách Lớp Học</title>
+    <link rel="stylesheet" href="Vendor\Bootstrap\css\bootstrap.css"/>	
+    <script type="text/javascript" src="Vendor\JQuery\jquery.js"></script>
+</head>
+<body>
+	<a href="/luu-lop-hoc.html" class="btn btn-primary">Them lop hoc</a>
+	<table class="table">
+		<thead>
+			<th>Ma lop</th>
+			<th>Ten lop</th>
+			<th>Phong hoc</th>
+			<th></th>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+	<script type="text/javascript">
+		function loading_class(){
+			jQuery.ajax({
+				url: '/list_class',
+				method: "GET",
+				success: function(result){
+					var html = '';
+					for (var i = 0; i < result.data.length; i++) {
+						html += 	'<tr>';
+						html +=			'<td>'+result.data[i].ma_lop+'</td>';
+						html +=			'<td>'+result.data[i].ten_lop+'</td>';
+						html +=			'<td>'+result.data[i].phong_hoc+'</td>';
+						html +=			'<td><a class="btn btn-primary" href="/chi-tiet-lop-hoc.html?id='+result.data[i]._id+'">Chi tiet</a><a data-id="'+result.data[i]._id+'" class="btn btn-danger" href="/delete_class"'+result.data[i]._id+' onclick="xoa_lop(this)">Xoa lop</a><a class="btn btn-info" href="/danh-sach-sinh-vien.html?ma_lop='+result.data[i].ma_lop+'">DS sinh vien</a><a class="btn btn-primary" href="/sua-lop-hoc.html?id='+result.data[i]._id+'">Chinh sua</a></td>';
+						html +=		'</tr>';	
+					}	
+					jQuery("table tbody").html(html);
+				}
+			});
+		}
+		loading_class();
+		function xoa_lop(element){
+			jQuery.ajax({
+				url: '/delete_class',
+				method: "GET",
+				data: {id: jQuery(element).attr("data-id")},
+				success: function(result){
+					if(result.status == 1){
+						alert(result.message);
+						loading_class();
+					}else{
+						alert("chua xoa duoc")
+					}
+				}
+			});
+		}
+	</script>
+</body>
+</html>

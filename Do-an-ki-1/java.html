@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java script</title>
+	<meta charset="UTF-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=vietnamese" rel="stylesheet">
+	<link rel="stylesheet" href="css/layout.css"/>
+	<script type="text/javascript">
+
+		// var x=5;
+		// var y="5gg7"; //tim so dau tien bo qua khi gap chu cai
+		// y = parseInt(y);//parseFloat() //chuyen thanh so nguyen hoac so thuc
+		// if(isNaN(y)){
+		// 	console.log("not a number");
+		// 	y=6;
+		// }
+		// var z = x+y;
+		// console.log(z);
+
+		// console.log(x); //tuong tu lenh prinf trong c
+		// x = "hello";
+		// alert("hello world"); //pop-up ko co gia tri tra ve
+		// confirm("OK?"); //pop-up xac nhan yes hoac no co gia tri tra ve
+		// console.log(confirm("OK?")); 
+		// x = confirm("OK?");
+		// console.log(x);
+		// do{
+		// 	x = confirm("Ban dong y voi dieu khoan?");
+		// }while(x == false); //vong lap
+		// var y= prompt("dien vao ten cua ban");
+		// x = x+y;
+		// console.log(x); //input co gia tri tra ve'
+
+		// 	setTimeout(function(){
+		// 	alert("time out cho 3 giay");
+		// 	prompt("Nhap ten"); //chờ 3 giây
+		// },3000);
+
+		// setInterval(function(){
+		// 	alert("bo thach may quay tay");
+		// },3000) //3 giây hiện 1 lần
+
+		// var z=parseInt(Math.random()*100); //1 so random tu 0 den 100
+		// console.log(z);
+
+		//onload - su kien xay ra khi load xong
+		//onclick - su kien xay ra khi click vao doi tuong
+		//onmouseover - su kien xay ra khi dua chuot vao vung anh huong
+		//onmouseout - su kien xay ra khi dua chuot ra ngoai vung anh huong
+		//onmouseenter - su kien xay ra khi dua chuot vao cho toi khi dua chuot ra ngoai vung anh huong
+		//mouseleave - su kien xay ra khi dua chuot ra ngoai vung anh huong giong nhu mouse out
+		//ondrag - su kien xay ra khi dua chuot vao keo doi tuong ra
+		//ondrop- su kien xay ra khi dua chuot vao keo roi tha doi tuong ra
+
+	</script>
+</head>
+<body>
+	<form action="#" method="GET" name="form" enctype="multipart/form-data">
+		<input onkeydown="alert('keydown')" type="text" name="username" placeholder="Name"/>
+		<input onkeypress="alert('keypress')" type="text" name="username" placeholder="Name2"/>
+		<input onkeyup="alert('keyup')" type="text" name="username" placeholder="Name3"/>
+
+		<select name="select" onchange="alert"('change')">
+			<option value="0">No 0</option>
+			<option value="0">No 1</option>
+			<option value="0">No 2</option>
+
+		<textarea cols="100" rows="10" oncopy="alert('copy')" oncut="alert('cut')" onpaste="alert('paste)"></textarea>
+	</form>
+</body>
+<script type="text/javascript">
+var obj = document.getElementById("tbID");
+var html = obj.innerHTML;
+console.log(html);
+obj.innerHTML = "<p>Hello</p>";
+</script>
+</html>

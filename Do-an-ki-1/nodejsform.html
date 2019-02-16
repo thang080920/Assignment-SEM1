@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+	<link rel="stylesheet" href="Vendor/Bootstrap/css/bootstrap.css"/>
+	<script type="text/javascript" src="Vendor/JQuery/jquery.js"></script>
+</head>
+<body>
+	<form method="GET" action="/add-contact" name="form_data" class="form col-xs-4" enctype="multipart/form_data">
+		<div class="alert alert-warning alert-dismissible fade in" role="alert" style="display: none"> <strong>Thêm danh ba thành công</strong> 
+		</div>
+		<div class="form-group">
+			<input type="number" name="id" value="" placeholder="ID" min="1"  class="input-text form-control" />
+			<br/>
+		</div>
+		<div class="form-group">	
+			<label for="user_name">User name</label>
+			<input type="text" id="user_name" name="name" value="" placeholder="User name" class="input-text form-control" />
+		</div>
+		<div class="form-group">
+			<label>Telephone</label>
+			<input type="text" name="tel" value="" placeholder="Telephone" class="input-text form-control" />
+		</div>
+		<button type="button" class="btn btn-primary" onclick="submitContact()">Them danh ba</button>
+	</form>
+	<ul class="col-xs-4" id="danhsach">
+		
+	</ul>
+	<script type="text/javascript">
+		function submitContact() {
+			var id = $("input[name=id]").val();
+			var name = $("input[name=name]").val();
+			var tel = $("input[name=tel]").val();
+			jQuery.ajax({
+				url: '/add-contact',
+				method: 'GET',
+				data: {id: id,name: name,tel: tel},
+				success: function(result){
+					$('.alert').fadeIn();
+					$('form input').val('');
+					loadingDanhba();	
+				}
+			});
+		}
+		loadingDanhba();
+		function loadingDanhba(){
+			jQuery.ajax({
+			url: '/danh-sach',
+			method: 'GET',
+			success: function(result){
+				var html = '';
+				for(var i =0;i< result.length;i++){
+					html+= '<li>'+result[i].name+' : '+ result[i].tel+'</li>';
+				}
+				$("#danhsach").html(html);
+			}
+		});
+		}
+		
+	</script>
+</body>
+</html>

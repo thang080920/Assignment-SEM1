@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasha - The Home Store</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+    <header id="header" class="section header">
+        <div class="container-fluid header-navbar">
+            <div class="my-navbar">
+                <div class="my-navbar-logo">
+                    <a href=""><img src="images/T Logo Dark.png"></a>
+                </div>
+                <div class="login-signup">
+                    <ul>
+                        <li class="sign-up"><a href="" data-toggle="modal" data-target="#ModalSignUp">Sign Up</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#ModalLogIn">Log In</a></li>
+                    </ul>
+                </div>
+                <a style="cursor: pointer;">
+                <div class="my-navbar-icon" id="nav-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="fixed-navbar container-fluid header-navbar" id="fixed-navbar">
+            <div class="my-navbar">
+                <div class="my-navbar-logo">
+                    <a href=""><img src="images/T Logo Light.png"></a>
+                </div>
+                <div class="login-signup">
+                    <ul>
+                        <li class="sign-up"><a href="" data-toggle="modal" data-target="#ModalSignUp">Sign Up</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#ModalLogIn">Log In</a></li>
+                    </ul>
+                </div>
+                <a style="cursor: pointer;">
+                <div class="my-navbar-icon" id="nav-icon2">
+                    <i class="fas fa-bars"></i>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="wrap-sidebar">
+                <div class="sidebar-close">
+                    <img src="images/close.png" id="close-sidebar">
+                </div>
+                <div class="sidebar-logo">
+                    <a href="">
+                        <img src="images/Tasha Dark.png">
+                    </a>
+                </div>
+                <div class="sidebar-menu">
+                    <nav class="menu">
+                        <ul>
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="#">Cookware</a>
+                                        <img id="drop-btn1" class="drop-btn" src="images/arrow down.png">
+                                    </div>
+                                </div>
+                                <ul class="hidden-menu" id="dropdown1">
+                                    <li><a href="">Cooking pots</a></li>
+                                    <li><a href="">Cooking Pans</a></li>
+                                    <li><a href="">Frying Pans</a></li>
+                                    <li><a href="">Cookware Sets</a></li>
+                                    <li><a href="">Handis</a></li>
+                                    <li><a href="">Kadais</a></li>
+                                    <li><a href="">Grill pans</a></li>
+                                    <li><a href="">Tawas</a></li>
+                                    <li><a href="">Egg Poachers</a></li>
+                                    <li><a href="">Steamers</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="#">Refrigeration</a>
+                                        <img id="drop-btn2" class="drop-btn" src="images/arrow down.png">
+                                    </div>   
+                                </div>
+                                <ul class="hidden-menu" id="dropdown2">
+                                    <li><a href="">Freezers</a></li>
+                                    <li><a href="">Refrigerators</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="#">Appliances</a>
+                                        <img id="drop-btn3" class="drop-btn" src="images/arrow down.png">
+                                    </div>
+                                </div>
+                                <ul class="hidden-menu" id="dropdown3">
+                                    <li><a href="">Blenders</a></li>
+                                    <li><a href="">Bread Makers</a></li>
+                                    <li><a href="">Coffee Makers</a></li>
+                                    <li><a href="">Ice Cream Makers</a></li>
+                                    <li><a href="">sorbet makers</a></li>
+                                    <li><a href="">Electric Kettles</a></li>
+                                    <li><a href="">Food Choppers</a></li>
+                                    <li><a href="">Toasters</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="#">Food Storage</a>
+                                        <img id="drop-btn4" class="drop-btn" src="images/arrow down.png">
+                                    </div>
+                                </div>
+                                <ul class="hidden-menu" id="dropdown4">
+                                    <li><a href="">Flask</a></li>
+                                    <li><a href="">Spice Jars</a></li>
+                                    <li><a href="">Storage Bags</a></li>
+                                    <li><a href="">Lunch Boxes</a></li>
+                                    <li><a href="">Vacuum bottles</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="#">Knife</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="hidden-login">
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="#" data-toggle="modal" data-target="#ModalLogIn">Log In</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="hidden-signup">
+                            <li>
+                                <div>
+                                    <div>
+                                        <a href="#" data-toggle="modal" data-target="#ModalSignUp">Sign Up</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="owl-carousel owl-theme" id="my-carousel">
+                <div class="item">
+                    <div class="slide-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/Background.jpg');">
+                    </div>
+                    <div class="slide-caption">
+                        <h1>Technology For<br> Your Kitchen</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slide-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/Background2.jpg');">
+                    </div>
+                    <div class="slide-caption">
+                        <h1>We Add Style <br> To Cooking</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slide-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/Background3.jpg');">
+                    </div>
+                    <div class="slide-caption">
+                        <h1>Kitchen Of <br> The Future</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="counter-slide">
+                <div class="current" id="counter">1</div>
+                <div class="total">3</div>
+            </div>
+        </div>
+    </header>
+    <section class="section about" id="about">
+        <div class="heading col-12">
+            <h3 class="title">About Us</h3>
+            <div class="title-underline"></div>
+            <div class="description col-lg-4">TASHA - The Home Store is Branded Company famous for home kitchen appliances.</div>
+            <div class="signature">
+                <img src="images/signature.png">
+            </div>
+        </div>
+        <div class="body container-fluid">
+            <div class="col-md-6 about1" style="text-align:center"><img class="company" src="images/Company.jpg"></div>
+            <div class="col-md-6 jumbotron about2">
+                <div class="about-content">
+                    <h2>TASHA</h2>
+                    <p>TASHA - The Home Store is Branded Company famous for home kitchen appliances. It
+                        provides collection of n number of appliances with different category to match the
+                        fast life of the generation.</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section selling">
+        <div class="heading col-12">
+            <h3 class="title">Our Products</h3>
+            <div class="title-underline"></div>
+            <div class="description col-lg-4">Sustainability with style.</div>
+        </div>
+        <div class="body container-fluid">
+            <div class="col-md-6 selling1">
+                <div class="col-sm-6">
+                    <div class="col-12"><img class="product" src="images/products/product1.jpg"></div>
+                    <div class="col-12"><img class="product" src="images/products/product2.jpg"></div>
+                </div>
+                <div class="col-sm-6"><img class="product" src="images/products/product3.jpg"></div>
+            </div>
+            <div class="col-md-6 selling2">
+                <div class="col-sm-6"><img class="product" src="images/products/product4.jpg"></div>
+                <div class="col-sm-6"><img class="product" src="images/products/product5.jpg"></div>
+                <div class="col-sm-6"><img class="product" src="images/products/product6.jpg"></div>
+                <div class="col-sm-6"><img class="product" src="images/products/product7.jpg"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section slogan">
+        <div class="slogan-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="ml-auto col-lg-10">
+                    <div class="slogan-content">
+                        <div class="slogan-text">
+                            <span>Buy Kitchen appliances now.</span>
+                        </div>
+                        <div class="slogan-icon">
+                            <a href=""><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section contact">
+        <div class="heading col-12">
+            <h3 class="title">CONTACT</h3>
+            <div class="title-underline"></div>
+            <div class="description col-lg-4">How to contact with us?</div>
+        </div>
+        <div class="container">
+            <div class="contact1 col-md-6">
+                <div class="store-locators col-6">
+                    <a href=""><i class="far fa-compass"></i></a>
+                    <a href="">Store Locators</a>
+                </div>
+                <div class="phone col-6">
+                    <a><i class="fas fa-mobile-alt"></i></a>
+                    <a>0988888888</a>
+                </div>
+                <div class="mail col-6">
+                    <a><i class="far fa-envelope"></i></a>
+                    <a>contact@tasha.com</a>
+                </div>
+                <div class="facebook col-6">
+                    <a><i class="fab fa-facebook-f"></i></a>
+                    <a>facebook.com/tasha</a>
+                </div>
+            </div>
+            <div class="contact2 col-md-6">
+                <div class="contact-form">
+                    <form class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" class="form-control form-contact" placeholder="Name" minlength="2" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your name with at least 2 characters.
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <input type="email" class="form-control form-contact" placeholder="Email" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your email.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <textarea class="form-control text-area contact-textarea" rows="4" placeholder="Add a Message" required></textarea>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12"><button class="send-message" type="submit">SEND MESSAGE</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section footer">
+        <div class="jumbotron">
+            <div class="footer-inner">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-google-plus-g"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-pinterest-p"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="progress-bar" id="loading"></div>
+
+    <div class="modal fade" id="ModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control signup-modal" id="FullName" placeholder="Full Name" required minlength="2">
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your name with at least 2 characters.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control signup-modal" id="Username" placeholder="Username" required minlength="2">
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your username with at least 2 characters.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control signup-modal" id="Email" placeholder="name@example.com" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your email.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control signup-modal" id="Password" placeholder="Password" required minlength="5">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your password with at least 5 characters.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control signup-modal" id="Retype-Password" placeholder="Retype Password" required minlength="5">
+                            <div class="invalid-feedback">
+                                Please retype your password.
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-4">
+                                <select class="custom-select signup-modal" required aria-required="true">
+                                    <option value="">Day</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please choose your birthday.
+                                </div>
+                            </div>
+                            <div class="form-group col-4">
+                                <select class="custom-select signup-modal" required aria-required="true">
+                                    <option value="">Month</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please choose your birthmonth.
+                                </div>
+                            </div>
+                            <div class="form-group col-4">
+                                <select class="custom-select signup-modal" required aria-required="true">
+                                    <option value="">Year</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please choose your birthyear.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="custom-select signup-modal" required aria-required="true">
+                                <option value="">Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Another">Another</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please choose your gender.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span>By clicking Sign Up, you agree to our Terms and Conditions.</span>
+                        </div>
+                        <button type="submit" class="signup-btn">Sign Up</button>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalLogIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <input type="text" class="form-control login-modal" id="Username2" placeholder="Username" required minlength="2">
+                            <div class="invalid-feedback">
+                                Please enter your username.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control login-modal" id="Password2" placeholder="Password" required minlength="5">
+                            <div class="invalid-feedback">
+                                Please enter your password.
+                            </div>
+                        </div>
+                        <div class="form-group text-right">
+                            <a href="" class="forgot">Forgot your password?</a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="login-btn">Log In</button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="vendor/jquerry/jquery-3.3.1.min.js"></script>
+    <script src="vendor/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/owlcarousel.js"></script>
+    <script src="js/counter-slide.js"></script>
+    <script src="vendor/tweenmax/TweenMax.min.js"></script>
+    <script src="vendor/scrollmagic/ScrollMagic.min.js"></script>
+    <script src="vendor/scrollmagic/debug.addIndicators.min.js"></script>
+    <script src="vendor/scrollmagic/animation.gsap.js"></script>
+    <script src="js/scrollmagic.js"></script>
+    <script src="js/js.js"></script>
+    <script src="vendor/nanobar/nanobar.js"></script>
+    <script>
+        var options = {
+            classname: 'progress-bar',
+            id: 'loading',
+            target: document.getElementById('loading')
+        };
+
+        var nanobar = new Nanobar( options );
+
+        // move bar
+        nanobar.go( 30 ); // size bar 30%
+        nanobar.go( 76 ); // size bar 76%
+
+        // size bar 100% and and finish
+        nanobar.go(100);
+
+
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+            }, false);
+        })();
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chi tiet lop hoc</title>
+	<link rel="stylesheet" type="text/css" href="Vendor/Bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="Vendor/JQuery/jquery.js"></script>
+</head>
+<body>
+	<h1></h1>
+	<h2></h2>
+	<script type="text/javascript">
+		function detail_class(id) {
+			jQuery.ajax({
+				url: '/detail_class',
+				method: "GET",
+				data: {id:id},
+				success: function(result){
+					jQuery('h1').append(result.data.ten_lop);
+					jQuery('h2').append(result.data.phong_hoc);
+				}
+			});
+		}
+		var urlParams = new URLSearchParams(window.location.search);
+		detail_class(urlParams.get("id"));
+	</script>
+</body>
+</html>

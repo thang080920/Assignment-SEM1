@@ -1,0 +1,184 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Demo bootstrap</title>
+		<link rel="stylesheet" href="Vendor/Bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/shopy.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="Vendor/JQuery/jquery.js"></script>
+		<script type="text/javascript" src="Vendor/Bootstrap/js/validator.js"></script>
+		<script type="text/javascript" src="Vendor/Bootstrap/js/bootstrap.js"></script>
+	</head>
+	<body>
+<!-- 		<button type="button"onclick="doimausang()">Doi mau sang</button>
+		<button type="button"onclick="doimautoi()">Doi mau toi</button>
+		<textarea class="doimau text active">Hieu oc cho dcm</textarea>
+
+		<div class="box" style="width: 50px;height: 50px;float:left;background-color: red;"></div>
+		<button class="btn btn-danger" onclick="action()">Submit</button> -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Đăng Ký
+</button>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Đăng ký</h4>
+      </div>
+      <div class="modal-body">
+        		<form data-toggle="validator" role="form">
+        			  <div class="form-group">
+    <label for="inputEmail" class="control-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Cần điền vào email" required>
+    <div class="help-block with-errors"></div>
+  </div>
+  <div class="form-group">
+    <label for="inputName" class="control-label">Tên</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Tên" required>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" class="control-label">Mật Khẩu</label>
+    <div class="form-inline row">
+      <div class="form-group col-sm-6">
+        <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Mật khẩu" required>
+        <div class="help-block">Tối thiểu 6 kí tự</div>
+      </div>
+      <div class="form-group col-sm-6">
+        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Mật khẩu xác nhận không trùng khớp" placeholder="Xác nhận" required>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="radio">
+      <label>
+        <input type="radio" name="Giới tính" required>
+        Nam
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="Giới tính" required>
+        Nữ
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" id="terms" data-error="Bạn không đồng ý với điều khoản" required>
+        Đồng ý với điều khoản
+      </label>
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Đăng Ký</button>
+  </div>
+</form>
+			<div class="section_3_2">
+				<div class="row" id="product_list">
+					<input type="text" id="url_box"/>
+					<button onclick="getData()">Duoc Oc cho</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function doimausang(){
+		var x = $(".text");
+			if (x.hasClass("active")) {
+				x.animate({
+				"margin-left": "100px"
+			},500);
+				x.removeClass("active")
+			}
+			else{
+				x.animate({
+				"margin-left": "0px"
+			},500);
+				x.addClass("active")
+			}
+		}
+
+		 function getData(){
+		 	var url = $("#url_box").val();
+		 		jQuery.ajax({
+				url: url,
+				method: "get",
+				success : function(result){
+					$("html").html(result);
+				}
+			});
+		 }
+
+
+
+
+		// 		function action(){
+		// 	var ip = $('input[name=action_number]');
+		// 	var number = parseInt(ip.val());
+		// 	if(isNaN(number)){
+		// 		number = 1;
+		// 	}
+		// 	console.log(number);
+		// 	var box = $('.box');
+		// 	//for(var i=0;i<number;i++){
+		// 		console.log(i);
+		// 		box.animate({
+		// 			"margin-left": "200px"
+		// 		},2000,function(){
+		// 			box.animate({
+		// 				"margin-top": "200px"
+		// 			},2000,function(){
+		// 				box.animate({
+		// 					"margin-left": "0px"
+		// 				},2000,function(){
+		// 					box.animate({
+		// 						"margin-top": "0px"
+		// 					},2000);
+		// 				});
+		// 			});
+		// 		});
+		// 	//}
+			
+		// }	
+		// tb.html(x); innerhtml
+		// tb.text(x); innertext
+		// tb.hide(); an 
+		// tb.show(); hien
+		// tb.fadeIn(500); mo dan theo thoi gian trong ()
+		// tb.fadeOut(500);
+		// tb.slideDown(500); truot dan theo thoi gian ()
+		// tb.slideUp(500);
+		// tb.toggle(); la 1 cap hide va show
+		// tb.sildetoggle(); la 1 cap slide down va up
+		// tb.animate({
+		// 	'margin-left':'100px';
+		// },5000); dich chuyen sang trai tu tu trong 5 giay
+
+	// var tb = $("#tbID"); 
+	 // theo id
+	// var tb = $(".table");
+	 // theo classname 
+	// var tb = $("table");
+	 // theo tagname - the binh thuong
+	 // tb.css("color","blue");
+	 // tb.css("background-color","pink");
+	 // tb.css({
+	 // 	"background-color":"pink",
+	 // 	"color":"yellow"});
+	 // var ip = $("input[name=email];");
+	 // ip.addClass("Hello");
+	 // var thead = $("table > thead");
+	 // thead.addClass("xx")
+	</script>
+</html>
+<!-- Auto = XS
+	 768 = SM
+	 992 = MD
+	 1170 = LG -->

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai tap java script</title>
+	<meta charset="UTF-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=vietnamese" rel="stylesheet">
+	<script type="text/javascript">
+	//bai 1:
+
+		// do{
+		//  	x= prompt("Điền tên của bạn");
+		//  }while(x == null || x == "");
+		//  do{
+		//  	var y = prompt("Năm sinh của bạn: ");
+		//  	y = parseInt(y);
+		//  }while(isNaN(y) || y >=2001);
+		// alert("xin chao " +x);
+
+	//bai 2:
+
+		// var y = prompt("Nhập tên của bạn: ");
+		// 	setTimeout(function(){
+		// 		alert("Xin chào "+ y);
+		// },3000);
+
+	//bai 3:
+
+		// var x=	setInterval(function(){
+		//  	alert("Bố thách mày quay tay");
+		//  	clearInterval(x); //ngừng xuất hiện
+		//  },3000) 		
+
+		// x=50;
+		// var it = setInterval(function(){
+		// 	if(x>0){
+		// 		x-=5;
+		// 		console.log(x);
+		// 	}
+		// }
+
+	//bai4:
+
+	// 	x=50;
+ // 	function startGame(){
+ // 			var it = setInterval(function(){
+	// 		if(x>0){
+	// 			do{
+	// 			x--;
+	// 			console.log(x);
+	// 			y=prompt("Đoán số trúng thưởng");
+	// 			y=parseInt(y);
+	// 			}while(isNaN(y));
+	// 		}
+	// 		if(x==y){
+	// 		alert("Bạn đã trúng thưởng");
+	// 		clearInterval(it);
+	// 	}else{
+	// 		alert("Bạn đã đoán sai");
+	// 	}
+	// },3000);
+ // 	}
+ 	//bai5:
+
+	</script>
+</head>
+<body>
+	<div class="sec3_1_3">
+					<div class="block sizes">
+					<h3>Sizes</h3>
+					<ul>
+						<li>
+							<input id="size-small" type="checkbox"/>
+							<label for="size-small">Small</label>
+						</li>
+						<li>
+							<input id="size-medium" type="checkbox"/>
+							<label for="size-medium">Medium</label>
+						</li>
+						<li>
+							<input id="size-larg" type="checkbox"/>
+							<label for="size-larg">Larg</label>
+						</li>
+						<li>
+							<input id="size-xlarg" type="checkbox"/>
+							<label for="size-xlarg">X Larg</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<style type="text/css">
+.sizes li{
+			float: left;
+			width: 100%;
+			padding: 5px 0;
+			margin-bottom:10px;
+			font-size:14;
+			font-weight:700;
+			list-style: none;
+}
+.sizes input[type=checkbox]{
+			margin-right: 5px;
+			display: none;
+}
+.sizes li label:before{
+			content: " ";
+			width: 3px;
+			height: 3px;
+			border:5px solid #f4f6f8;
+			background-color: #f4f6f8;
+			display: inline-block;
+			margin-right: 10px;
+}
+.sizes li input[type=checkbox]:checked + label{
+			color: #ff5912;
+}
+.sizes li input[type=checkbox]:checked + label:before{
+			border:5px background: #1860ad;
+}
+		</style>
+	<!-- <button id="btn1" type="submit" onclick="return confirm('are you sure?')" disabled><span>Submit</span></button>
+		</form>
+
+		<button type="button" class="active" onclick="fade(this)">Click</button>
+		<div id="box-text"> -->
+
+	<!-- <select id="selectZ" onchange="changebgcolor()">
+	<option value="white" >Doi mau white</option>
+	<option value="black" >Doi mau black</option>
+	<option value="pink" >Doi mau pink</option>
+	</select>
+
+	<select id="selectY"  onchange="changewordcolor()">
+	<option value="white" >Doi mau chu sang trang</option>
+	<option value="black" >Doi mau chu sang den</option>
+	</select>
+
+	<select id="selectX"  onchange="changefont()">
+	<option value="times new roman">Doi sang font Times New Roman</option>
+	<option value="arial">Doi sang font arial</option>
+	</select>
+
+	<div class="cont" id="tbID">
+		<p>dcm dcm dcm dcm dcm Hieu</p>
+		<p>dcm dcm dcm dcm dcm Hieu</p>
+		<p>dcm dcm dcm dcm dcm Hieu</p>
+		<p>dcm dcm dcm dcm dcm Hieu</p>
+	</div> -->
+
+	<!-- <button type="button" onclick="startGame()">Start Game</button> -->
+	<!-- <div>
+	<p>Ten Tai Khoan</p>
+	<p><input type="text" name="TenTaiKhoan" value="" placeholder="Nhap ten tai khoan cua ban" class="input-text" size="32" ></p>
+	<p>Mat Khau</p>
+	<p><input type="password" name="NhapMatKhau" value="" placeholder="Nhap mat khau tai khoan cua ban" class="input-text" size="32" ></p>
+	<p>Xac Nhan Mat Khau</p>
+	<p><input type="password" name="XacNhanMatKhau" value="" placeholder="Xac nhan mat khau tai khoan cua ban" class="input-text" size="32" ></p>
+	<p>Email</p>
+	<p><input type="email" name="NhapEmail" value="" placeholder="Nhap email cua ban" class="input-text" size="32" ></p>
+	<p>So Dien Thoai</p>
+	<p><input type="number" name="NhapSDT" value="" placeholder="Nhap so dien thoai cua ban" class="input-text" size="32"  ></p>
+	<p><button type="submit" onclick="return confirm('Ban co dong y dang ky khong?')">Dang Ky</button></p>
+	</div> -->
+<!-- <button onclick="anhien()">Click</button>
+<textarea id="select1" cols="100" rows="10"></textarea> -->
+<!-- <style>
+		.menu{position: relative;}
+			.menu ul{display: none;position: absolute;}
+			.menu.active ul{display: block};
+		</style>
+
+		 <div class="box">
+			<div class="box-content">
+				<div class="menu" onmouseenter="showMenu(this)" onmouseleave="hideMenu(this)">
+					<a href="#">HOME</a>
+					<ul>
+						<li>HOME1</li>
+						<li>HOME2</li>
+						<li>HOME3</li>
+					</ul> --> 
+		<!-- </div>
+			</div> -->
+			<!-- <div class="box-content2"></div> -->
+<!-- 		</div>
+		<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="image/ao1.png"> -->
+</body>
+<script type="text/javascript">
+
+			// function showMenu(e){
+			// 	e.classList.add("active");
+			// }
+
+			// function hideMenu(e){
+			// 	e.classList.remove("active");
+			// }
+
+// function bigImg(x) {
+//     x.style.height = "64px";
+//     x.style.width = "64px";
+// }
+
+// function normalImg(x) {
+//     x.style.height = "32px";
+//     x.style.width = "32px";
+// }
+// function fade(y){
+// 				var x = document.getElementById("box-text");
+
+				// if(x.style.display == "none"){
+				// 	x.style.display = "block";
+				// }else{
+				// 	x.style.display = "none";
+				// }
+
+			// 	if(y.classList.contains("active")){
+			// 		y.classList.remove("active");
+			// 		x.style.display = "none";
+			// 	}else{
+			// 		x.style.display = "block";
+			// 		y.classList.add("active");
+			// 	}
+			// }
+
+			// function btn(el){
+			// 	console.log(el);
+			// }
+			// var btn1  = document.getElementById("btn1");
+			// btn1.removeAttribute("disabled");
+			// function thongBao(e){
+			// 	alert(e.value);
+	// function doimausang(){
+	// 	var x = document.getElementById("tbID");
+		// x.style.backgroundColor = "white";
+	// }
+	// function changefont(){
+	// 	var sl = document.getElementById("selectX");
+	// 	var x = document.getElementById("tbID");
+	// 	x.style.fontFamily = sl.value
+	// }
+	// function changewordcolor(){
+	// 	var sl = document.getElementById("selectY");
+	// 	var x = document.getElementById("tbID");
+	// 	x.style.color = sl.value
+	// }
+	// function changebgcolor(){
+	// 	var sl = document.getElementById("selectZ");
+	// 	var x = document.getElementById("tbID");
+	// 	x.style.backgroundColor = sl.value
+	// }
+	// var obj = document.getElementById("tbID");
+	// var html = obj.innerHTML;
+	// console.log(html);
+	// obj.innerHTML = "<p>Hello</p>";
+	// function anhien(){
+	// 	var x=document.getElementById("select1");
+
+	// 	if(x.style.display == "none")
+
+	// 		x.style.display = "block";
+
+	// 	else x.style.display = "none";
+	// }
+</script>
+</html>

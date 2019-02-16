@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Danh sach lop hoc</title>
+	<link rel="stylesheet" type="text/css" href="Vendor/Bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="Vendor/JQuery/jquery.js"></script>
+</head>
+<body>
+	<a href="/luu-lop-hoc.html" class="btn btn-primary">Them lop hoc</a>
+	<table class="table">
+		<thead>
+			<th>Ten SV</th>
+			<th>MSSV</th>
+			<th></th>
+		</thead>
+		<tbody>
+			
+		</tbody>
+	</table>
+	<script type="text/javascript">
+		var urlParams = new URLSearchParams(window.location.search);
+		jQuery.ajax({
+				url: '/list-sv-class',
+				method: "GET",
+				data: {ma_lop:urlParams.get("ma_lop")},
+				success: function(result){
+					var html = '';
+					for(var i=0;i<result.data.length;i++){
+						html += '<p>'+result.data[i].ten_sv+'</p>'
+					}	
+					jQuery("tbody").append(html);
+				}
+			});	
+	</script>
+</body>
+</html>
