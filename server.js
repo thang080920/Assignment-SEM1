@@ -73,7 +73,7 @@ MongoClient.connect(url, function (err, db) {
            if (err) {
                res.send("Failed");
            } else {
-               res.redirect('/contactus.html');
+               res.redirect('/contactus-sem1.html');
            }
        });
     });

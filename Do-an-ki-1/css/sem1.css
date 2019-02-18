@@ -106,18 +106,14 @@ nav ul li a{
     font-family: 'Coiny', cursive;
 }
 nav ul li a:hover{
-    color:black;
+    color:black !important;
     background:rgba(0,0,0,0.1);
     text-decoration: none;
 }
 nav ul li a:visited{
     text-decoration:none;
-    color:black;
+    color:#666;
 }
-nav ul li a:focus{
-    text-decoration: none;
-}
-
 nav ul li ul{
     display:block;
     background:#ffffff;
@@ -464,6 +460,7 @@ footer{
     margin:10px 50px;
 }
 .gallery img{
+    height:230px;
     width:230px;
     padding:5px;
     transition:0.5s;
@@ -561,5 +558,8 @@ footer{
 }
 .wedding-body-service p{
     margin:0 !important;
+}
+#map{
+    height:600px;
 }
 

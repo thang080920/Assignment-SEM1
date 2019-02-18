@@ -22,19 +22,19 @@
                         </div>
                     <div>
                         <ul>
-                            <li><a href="#">Trang Chủ</a></li>
+                            <li><a href="doancuoiki1.html">Trang Chủ</a></li>
                             <li><a href="#">Dịch Vụ</a>
                                 <ul>
-                                    <li ><a href="#">Lễ Cưới</a></li>
-                                    <li ><a href="#">Tiệc Sinh Nhật</a></li>
-                                    <li ><a href="#">Lễ Hội Âm Nhạc</a></li>
-                                    <li ><a href="#">Sự Kiện Trường Học</a></li>
-                                    <li ><a href="#">Sự Kiện Khác</a></li>
+                                    <li ><a href="wedding-service.html">Lễ Cưới</a></li>
+                                    <li ><a href="birthday-service.html">Tiệc Sinh Nhật</a></li>
+                                    <li ><a href="music-service.html">Lễ Hội Âm Nhạc</a></li>
+                                    <li ><a href="school-service.html">Sự Kiện Trường Học</a></li>
+                                    <li ><a href="food-service.html">Lễ Hội Ẩm Thực</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Thư Viện</a></li>
-                            <li><a href="#">Giới Thiệu</a></li>
-                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="gallery.html">Thư Viện</a></li>
+                            <li><a href="AboutUs.html">Giới Thiệu</a></li>
+                            <li><a href="contactus-sem1.html">Liên Hệ</a></li>
                         </ul>
                     </nav>
                 <div>
@@ -72,7 +72,7 @@
     <div class="contact-us-input-container">
         <div class="row">
                 <div class="contactusinput col-lg-12">
-                        <form>
+                        <form method="POST" action="luu-thong-tin" enctype="multipart/form-data">
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label>Tên:</label>
@@ -94,7 +94,7 @@
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <label>Tin Nhắn</label>
-                                    <textarea class="form-control" placeholder="Nhập tin nhắn của bạn" rows="10"></textarea>
+                                    <textarea name="note" class="form-control" placeholder="Nhập tin nhắn của bạn" rows="10"></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-3 contact-btn">
@@ -105,9 +105,13 @@
         </div>
     </div>
 </section>
+
 <section class="GGMap col-lg-12">
+    <div class="row">
         <div id="map"></div>
+    </div>
 </section>
+
 <section class="nearfoot col-lg-12">
     <div class="layer">
     <div class="cont">
@@ -153,13 +157,12 @@
 </section>
 </body>
 <script>
-    var map;
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 21.0281772, lng: 105.7828902},
-        zoom: 8
-      });
-    }
+function initMap() {
+			var uluru = {lat: 21.0287511, lng: 105.7806153};
+	  		var map = new google.maps.Map(
+	      	document.getElementById('map'), {zoom: 15, center: uluru});
+	  		var marker = new google.maps.Marker({position: uluru, map: map});
+		}
   </script>
   <script src="https://maps.googleapis.com/maps/api/js?AIzaSyAc9UZjh-K19XCAJTOhbSw1ouoQuORlR6Q&callback=initMap"
   async defer></script>
